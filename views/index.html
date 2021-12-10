@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Metadata Microservice</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>API Project: File Metadata Microservice</h2>
+      <h3>User Stories:</h3>
+      <ol>
+        <li>User can upload single file of any type</li>
+        <li>
+         User will receive the JSON output once the file is submitted <br> with fields  <code>name</code>, <code>type</code> and <code>size</code> in bytes
+        </li>
+      </ol>
+
+      <h3>Upload File</h3>
+      <p>
+        Please Upload a File ...
+      </p>
+      <div class="view">
+        <h4 id="output"></h4>
+        <form
+          enctype="multipart/form-data"
+          method="POST"
+          action="/api/upload"
+        >
+          <input
+            id="inputfield"
+            type="file"
+            
+            name="upfile"
+            required="required"
+          />
+          <input id="button" type="submit" value="Upload" />
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
